@@ -107,7 +107,7 @@ Just run the Python file. No installations are needed.
 –> launch angle = 45°
 
 • OUTPUT
-![Example Output](Output_screenshot)
+![Example Output](Output_screenshot.png)
 
 
 

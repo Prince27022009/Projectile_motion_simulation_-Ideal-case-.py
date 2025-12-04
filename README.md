@@ -1,12 +1,14 @@
 # Projectile_motion_simulation_-Ideal-case-.py
 
-⭐ Projectile Motion Visualizer (Ideal Physics Model)
 
-This project is a clean and full visual simulation of ideal projectile motion. It calculates everything using direct physics formulas, and plots the entire trajectory with automatic scaling, markers, arrows, and important visual guides. I built this over 3 days while balancing academics, using AI assistance mainly for debugging, structuring, and polishing the final implementation.
+## ⭐ Projectile Motion Visualizer (Ideal Physics Model)
+
+This project is a clean and full visual simulation of ideal projectile motion. It calculates everything using direct physics formulas, and plots the entire trajectory with automatic scaling, markers, arrows, and important visual guides. 
+I built this over 3 days while balancing academics, using AI assistance mainly for debugging, structuring, and polishing the final implementation.
 
 
 
-🔍 What This Project Does
+## 🔍 What This Project Does
 
 •Plots the full trajectory of a projectile using ideal kinematic equations
 
@@ -28,19 +30,19 @@ This project is a clean and full visual simulation of ideal projectile motion. I
 
 
 
-🧠 How It Works
+## 🧠 How It Works
 
 This simulator uses closed-form physics equations:
 
-•x(t) = v0 * cos(θ) * t
+•**x(t) = v0 * cos(θ) * t**
 
-•y(t) = v0 * sin(θ) * t - 0.5 * g * t²
+•**y(t) = v0 * sin(θ) * t - 0.5 * g * t²**
 
-•T = (2 * v0 * sin(θ)) / g
+•**T = (2 * v0 * sin(θ)) / g**
 
-•H = (v0² * sin²(θ)) / (2g)
+•**H = (v0² * sin²(θ)) / (2g)**
 
-•R = (v0² * sin(2θ)) / g
+•**R = (v0² * sin(2θ)) / g**
 
 
 Using 200 sample points gives a smooth trajectory when plotted with Turtle.
@@ -48,7 +50,7 @@ No numerical integration, no drag model, and no frame-by-frame animation — jus
 
 
 
-🎯 Features
+## 🎯 Features
 
 •Ideal projectile model
 
@@ -71,30 +73,30 @@ This project aims to stay simple, understandable, and fast while still looking p
 
 
 
-🧩 Why I Built This
+## 🧩 Why I Built This
 
 I wanted to create something that shows real physics visually without relying on heavy libraries like matplotlib. The idea was to build a project that actually looks good, fits within high school basic kinametics, and still feels meaningful. It also helped me practice structuring code, working with turtle graphics, applying formulas correctly, and using AI as a tool, not a crutch.
 
 
 
-🤖 AI Assistance Disclaimer
+## 🤖 AI Assistance Disclaimer
 
 I designed the logic, physics flow, visual layout, and overall structure myself.
 AI was used for:
 
-•debugging
+•**debugging**
 
-•checking formulas
+•**checking formulas**
 
-•improving structure
+•**improving structure**
 
-•polishing the final version
+•**polishing the final version**
 
 
 The core idea, execution, and decisions are mine.
 
 
 
-🚀 How to Run
+## 🚀 How to Run
 
 Just run the Python file. No installations are needed.

@@ -1,4 +1,4 @@
-# Projectile_motion_simulation_-Ideal-case-.py
+# Projectile_motion_simulation_(Ideal-case)
 
 
 ## ⭐ Projectile Motion Visualizer (Ideal Physics Model)
@@ -34,15 +34,15 @@ I built this over 3 days while balancing academics, using AI assistance mainly f
 
 This simulator uses closed-form physics equations:
 
-•**x(t) = v0 * cos(θ) * t**
+**•x(t) = v0 * cos(θ) * t**
 
-•**y(t) = v0 * sin(θ) * t - 0.5 * g * t²**
+**•y(t) = v0 * sin(θ) * t - 0.5 * g * t²**
 
-•**T = (2 * v0 * sin(θ)) / g**
+**•T = (2 * v0 * sin(θ)) / g**
 
-•**H = (v0² * sin²(θ)) / (2g)**
+**•H = (v0² * sin²(θ)) / (2g)**
 
-•**R = (v0² * sin(2θ)) / g**
+**•R = (v0² * sin(2θ)) / g**
 
 
 Using 200 sample points gives a smooth trajectory when plotted with Turtle.
@@ -84,13 +84,13 @@ I wanted to create something that shows real physics visually without relying on
 I designed the logic, physics flow, visual layout, and overall structure myself.
 AI was used for:
 
-•**debugging**
+**•debugging**
 
-•**checking formulas**
+**•checking formulas**
 
-•**improving structure**
+**•improving structure**
 
-•**polishing the final version**
+**•polishing the final version**
 
 
 The core idea, execution, and decisions are mine.
@@ -107,7 +107,7 @@ Just run the Python file. No installations are needed.
 –> launch angle = 45°
 
 • OUTPUT
-![Example Output](Output_screenshot)
+![Example Output](Output_screenshot.png)
 
 
 

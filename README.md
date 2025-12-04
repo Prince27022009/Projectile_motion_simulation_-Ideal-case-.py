@@ -100,3 +100,13 @@ The core idea, execution, and decisions are mine.
 ## 🚀 How to Run
 
 Just run the Python file. No installations are needed.
+
+**Example:**
+•INPUT
+–> initial speed = 40 m/s
+–> launch angle = 45°
+
+• OUTPUT
+
+
+

@@ -1,4 +1,4 @@
-# Projectile_motion_simulation_(Ideal-case).py
+# Projectile motion simulation (Ideal case)
 
 
 ## ⭐ Projectile Motion Visualizer (Ideal Physics Model)

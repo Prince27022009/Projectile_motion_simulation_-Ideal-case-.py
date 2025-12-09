@@ -46,7 +46,7 @@ This simulator uses closed-form physics equations:
 
 
 Using 200 sample points gives a smooth trajectory when plotted with Turtle.
-No numerical integration, no drag model, and no frame-by-frame animation — just pure, ideal motion.
+No numerical integration, no drag model, and no framen by frame animation, just pure ideal motion.
 
 
 

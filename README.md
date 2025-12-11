@@ -99,4 +99,5 @@ The core idea, execution, and decisions are mine.
 
 ## 🚀 How to Run
 
-Just run the Python file. No installations are needed
+Just run the Python file. No installations are needed.
+**script:** python Code_of_project.py

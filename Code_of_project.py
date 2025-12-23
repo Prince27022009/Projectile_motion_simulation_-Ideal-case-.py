@@ -1,7 +1,7 @@
 import math
 import turtle
 
-GRAVITY = 9.8
+gravity = 9.8
 
 
 # SETUP SCREEN
@@ -19,32 +19,30 @@ pen.width(2)
 pen.color("cyan")
 
 
-# USER INPUT (Ideal model)
+# USER INPUT
 
 
 v0 = float(turtle.numinput("Velocity", "Initial speed (m/s):", 40))
 angle = float(turtle.numinput("Angle", "Launch angle (degrees):", 45))
 
-angle_rad = math.radians(angle)
+angle = math.radians(angle)
 
 
 # ANALYTIC PHYSICS (Ideal Projectile Motion)
 
 
 # Time of flight
-T = (2 * v0 * math.sin(angle_rad)) / GRAVITY
+T = (2 * v0 * math.sin(angle)) / gravity
 
 # Maximum height
-H = (v0**2 * (math.sin(angle_rad))**2) / (2 * GRAVITY)
+H = (v0**2 * (math.sin(angle))**2) / (2 * gravity)
 
 # Range
-R = (v0**2 * math.sin(2 * angle_rad)) / GRAVITY
-if R < 0:
-    R = -R  # numeric safety
+R = (v0**2 * math.sin(2 * angle)) / gravity
 
 # Peak occurs at:
 t_peak = T / 2
-x_peak = v0 * math.cos(angle_rad) * t_peak
+x_peak = v0 * math.cos(angle) * t_peak
 
 
 # GENERATE TRAJECTORY POINTS
@@ -56,8 +54,8 @@ ys = []
 num_points = 200  # smooth curve
 for i in range(num_points + 1):
     t = (i / num_points) * T
-    x = v0 * math.cos(angle_rad) * t
-    y = v0 * math.sin(angle_rad) * t - 0.5 * GRAVITY * t**2
+    x = v0 * math.cos(angle) * t
+    y = v0 * math.sin(angle) * t - 0.5 * gravity * t**2
     xs.append(x)
     ys.append(max(y, 0))  # ensure ground cutoff
 
@@ -104,44 +102,6 @@ pen.pendown()
 
 for i in range(len(xs)):
     pen.goto(sx(xs[i]), sy(ys[i]))
-
-
-# DRAW DIRECTION ARROWS
-
-
-arrow = turtle.Turtle()
-arrow.hideturtle()
-arrow.speed(0)
-arrow.color("white")
-arrow.width(1)
-
-def draw_arrow(x1, y1, x2, y2):
-    angle_deg = math.degrees(math.atan2(y2 - y1, x2 - x1))
-
-    arrow.penup()
-    arrow.goto(x1, y1)
-    arrow.pendown()
-    arrow.goto(x2, y2)
-
-    # Arrow head
-    arrow.penup()
-    arrow.goto(x2, y2)
-    arrow.setheading(angle_deg)
-    arrow.left(150)
-    arrow.pendown()
-    arrow.forward(7)
-
-    arrow.penup()
-    arrow.goto(x2, y2)
-    arrow.setheading(angle_deg)
-    arrow.right(150)
-    arrow.pendown()
-    arrow.forward(7)
-
-# Place arrows every N points
-N = 20
-for i in range(0, len(xs) - N, N):
-    draw_arrow(sx(xs[i]), sy(ys[i]), sx(xs[i+N]), sy(ys[i+N]))
 
 
 # MARKERS + LABELS
@@ -197,8 +157,8 @@ for y in range(int(sy(H)), 0, -15):
 
 
 # CALCULATE FINAL VELOCITY 
-vx_final = v0 * math.cos(angle_rad)
-vy_final = -v0 * math.sin(angle_rad)
+vx_final = v0 * math.cos(angle)
+vy_final = -v0 * math.sin(angle)
 v_final = math.sqrt(vx_final**2 + vy_final**2)
 
 

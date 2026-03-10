@@ -1,14 +1,14 @@
 # Projectile motion simulation (Ideal case)
 
 
-## ⭐ Projectile Motion Visualizer (Ideal Physics Model)
+## Projectile Motion Visualizer (Ideal Physics Model)
 
 This project is a clean and full visual simulation of ideal projectile motion. It calculates everything using direct physics formulas, and plots the entire trajectory with automatic scaling, markers, arrows, and important visual guides. 
 I built this over 3 days while balancing academics, using AI assistance mainly for debugging, structuring, and polishing the final implementation.
 
 
 
-## 🔍 What This Project Does
+## What This Project Does
 
 •Plots the full trajectory of a projectile using ideal kinematic equations
 
@@ -30,7 +30,7 @@ I built this over 3 days while balancing academics, using AI assistance mainly f
 
 
 
-## 🧠 How It Works
+## How It Works
 
 This simulator uses closed-form physics equations:
 
@@ -48,28 +48,6 @@ This simulator uses closed-form physics equations:
 Using 200 sample points gives a smooth trajectory when plotted with Turtle.
 No numerical integration, no drag model, and no framen by frame animation, just pure ideal motion.
 
-
-
-## 🎯 Features
-
-•Ideal projectile model
-
-•Smooth 200-point trajectory
-
-•Auto scaling
-
-•Direction arrows to show the motion
-
-•Clean annotations
-
-•Dashed horizontal & vertical guides
-
-•Final velocity vector and speed
-
-•Constant acceleration display
-
-
-This project aims to stay simple, understandable, and fast while still looking polished.
 
 
 
@@ -91,9 +69,6 @@ AI was used for:
 •**improving structure**
 
 •**polishing the final version**
-
-
-The core idea, execution, and decisions are mine.
 
 
 

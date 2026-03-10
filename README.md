@@ -1,7 +1,7 @@
 # Projectile motion simulation (Ideal case)
 
 
-## Projectile Motion Visualizer (Ideal Physics Model)
+##  Projectile Motion Visualizer (Ideal Physics Model)
 
 This project is a clean and full visual simulation of ideal projectile motion. It calculates everything using direct physics formulas, and plots the entire trajectory with automatic scaling, markers, arrows, and important visual guides. 
 I built this over 3 days while balancing academics, using AI assistance mainly for debugging, structuring, and polishing the final implementation.
